@@ -1,0 +1,32 @@
+﻿@import "mytodo.scss";
+
+
+#root {
+    width: 100%;
+}
+
+.sidebar{
+    height: 100vh;
+}
+
+.tooltip-add-project {
+    --bs-tooltip-bg: var(--bs-info);
+    --bs-tooltip-color: var(--bs-white);
+}
+.tooltip-add-project .tooltip-arrow::before {
+   background-color: var(--bs-info);
+}
+
+/* App.css */
+.tooltip-add-project {
+    --bs-tooltip-bg: var(--bs-info);
+    --bs-tooltip-color: var(--bs-white);
+}
+
+.tooltip-add-project .tooltip-arrow::before {
+    border-color: var(--bs-info) transparent transparent transparent;
+}
+
+.tooltip-add-project .tooltip-arrow::after {
+    border-color: var(--bs-info) transparent transparent transparent;
+}
