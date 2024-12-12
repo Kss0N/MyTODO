@@ -36,6 +36,7 @@ function Navigation() {
 
 
 
+
 function Sidebar() {
 
 
@@ -71,7 +72,7 @@ function Sidebar() {
     <Container fluid className="d-flex justify-content-center">
       <OverlayTrigger
         placement="right"
-        delay={{ show: 250, hide: 350 }}
+        delay={{ show: 500, hide: 400 }}
         overlay={renderToolTipAddProject}
       >
         <Button className="bg-body border-2 text-primary text-center">
