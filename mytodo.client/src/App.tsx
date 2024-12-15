@@ -1,11 +1,21 @@
-import { useEffect, useState } from 'react';
 import './App.scss';
+import { useEffect, useState } from 'react';
+import { v4 as uuid } from 'uuid';
 
 import MyTodo from './assets/MyTodo.svg';
 import { Button, Col, Container, Nav, Navbar, Overlay, OverlayTrigger, Row, Tooltip } from 'react-bootstrap';
 
 
+import { Task } from './types';
 
+
+const uuidMe = uuid(); // in this mockup this represents me.
+
+const tasks: Task[] = [
+  new Task(uuidMe, "Finsh this project"),
+  new Task(uuidMe, "Call mom"),
+  new Task(uuidMe, "Do the thing"),
+];
 
 
 function Navigation() {
@@ -95,6 +105,11 @@ function Sidebar() {
   }
 
 }
+
+
+
+
+
 
 
 export default function App() {
